@@ -13,7 +13,7 @@ statt
 !   std::cout << "blaaaa";
 !   std::cout << "blaaaa";
 !   std::cout << "blaaaa";
-!   std::cout << "blaaaa";
+!   std::cout << "blaaaa"g;
 */
 
 int main(void){
