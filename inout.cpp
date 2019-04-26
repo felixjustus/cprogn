@@ -8,8 +8,8 @@ int main(void){
   cin >> antwort;
   
   switch(antwort){
-  case 0: antwort = y; cout << "NOCHMAAL\n"; break;
-  case 1: antwort = n; cout << "Echt nicht?\n"; break;
+  case 0: antwort = 'y'; cout << "NOCHMAAL\n"; break;
+  case 1: antwort = 'n'; cout << "Echt nicht?\n"; break;
   default : cout << "Bitte benutz nur y/n KLEINGESCHRIEBEN!\n";
   }
   
