@@ -14,19 +14,17 @@ int main(void){
 
 
 
-while(antwort != n){                      //? komisch warum erkennt der kein char.... immernoch...
-  if(antwort != 'y' || antwort != 'n'){
+  while(antwort != n){                      //? komisch warum erkennt der kein char.... immernoch...
+    if(antwort != 'y' || antwort != 'n'){
     cout << "Bitte nur y/n KLEINGESCHRIBEN benutzen! \n";
 
-  } else {
-    if (antwort == 'y'){
-      cout << "Und nochmaal!\n";
     } else {
-     cout << "Ok tschau!\n"; 
+      if (antwort == 'y'){
+        cout << "Und nochmaal!\n";
+      } else {
+        cout << "Ok tschau!\n"; 
+      }
     }
-}
-
-
   //? switch mit ner char abfrage geht irgendwie nicht..
 /*  switch(antwort){
   case 0: antwort = 'y'; cout << "NOCHMAAL\n"; break;
@@ -34,5 +32,5 @@ while(antwort != n){                      //? komisch warum erkennt der kein cha
   default : cout << "Bitte benutz nur y/n KLEINGESCHRIEBEN!\n";
   }
 */
-  
-}}
+  }
+}
