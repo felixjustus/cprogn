@@ -13,7 +13,7 @@ statt
 !   std::cout << "blaaaa";
 !   std::cout << "blaaaa";
 !   std::cout << "blaaaa";
-!   std::cout << "blaaaa"g;
+!   std::cout << "blaaaa"; is this added in the new file?
 */
 
 int main(void){
