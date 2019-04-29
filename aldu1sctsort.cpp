@@ -14,5 +14,13 @@ int main(void){
   int liste[groesse];
 
   groesse = 10;
-  rand() % 100;
+
+  
+  //! while (liste[groesse] =! '/0'){ so hätte ich es gern gelöst , aber '/0' ist nur für chars...
+  for (int i=0; i<groesse; i++){
+    liste[i] = rand() % 101;
+    cout << liste[i];
+  }
+  cout << "Fertig";
+  return 0;
 }
