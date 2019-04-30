@@ -12,15 +12,21 @@ using namespace std;
 */
 
 
+int swap(int a, int b){
+  int temp;
+  temp = a;
+  a = b;
+  b = temp;
+  return a ,b;
+}
 
-
-
+//! auf jedenfall muss eigentlich arr[minMarker]/arr[maxMarker] gemacht werden um zu swapn
 int selectSort(int arr[], int size){
   int minMarker, maxMarker; 
   int temp = arr[0];
   int next = 1;
   
-  for(int i=0; i<size; i++){      //? for schleife zum suchen des max
+    for(int i=0; i<size; i++){      //? for schleife zum suchen des max
     if(arr[i]>=temp){
       temp = arr[i];
       maxMarker = temp;
@@ -38,6 +44,7 @@ int selectSort(int arr[], int size){
     cout << minMarker << "MINMARKER!" << endl;
     return 0;
 }
+
 
 int main(void){
   int groesse=10;                 //? int groesse als globale variable initialisieren und anschließend durch übergabe in der conole integer festlegen (in der main)
