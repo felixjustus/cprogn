@@ -15,12 +15,28 @@ using namespace std;
 
 
 
-int findMin(){                    //? function(int array[], int groesse)   <- array übergeben
-  int minMarker;
+int selectSort(int arr[], int size){
+  int minMarker, maxMarker; 
+  int temp = arr[0];
+  int next = 1;
   
-  for(int i=0; i<groesse; i++){
-    liste[i]
+  for(int i=0; i<size; i++){      //? for schleife zum suchen des max
+    if(arr[i]>=temp){
+      temp = arr[i];
+      maxMarker = temp;
+    }
   }
+  cout << maxMarker << "MAXMARKER!" << endl;
+  temp = 111;
+
+  for(int i=0; i<size; i++){     //? for schleife zum suchen des min
+    if(arr[i]<=temp){             
+      temp = arr[i];
+      minMarker = temp;
+    }
+  }
+    cout << minMarker << "MINMARKER!" << endl;
+    return 0;
 }
 
 int main(void){
@@ -32,6 +48,8 @@ int main(void){
     liste[i] = rand() % 101;
     cout << liste[i] << endl;
   }
+
+  selectSort(liste, groesse);
   cout << "Fertig";
   return 0;
 }
