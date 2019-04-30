@@ -10,10 +10,8 @@ TODO-rekursiv
 */
 
 int main(void){
-  int groesse;
+  int groesse=10;
   int liste[groesse];
-
-  groesse = 10;
 
   
   //! while (liste[groesse] =! '/0'){ so hätte ich es gern gelöst , aber '/0' ist nur für chars...
