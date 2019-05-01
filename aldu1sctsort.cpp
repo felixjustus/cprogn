@@ -57,7 +57,7 @@ while (next <= size){
       if(arr[next] < arr[position]){
         minMarker = arr[next];
       }
-      next++;
+      //next++;
       if(arr[position] != minMarker){
         //swap(arr[position], arr[minMarker]);
         //swap(position, minMarker); //! warum geht das nicht
