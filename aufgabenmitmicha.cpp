@@ -1,7 +1,7 @@
 //! <16:18:02>
 #include <iostream>
 #include <string>
-#include <string>
+#include <algorithm>
 using namespace std;
 
 //? Aufgabe 1
@@ -21,5 +21,6 @@ std::istringstream stream(line);
 for (int i=0; stream.good(); i++) {
   stream >> input[i];
 }
+
 }
 
