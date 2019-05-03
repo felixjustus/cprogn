@@ -13,14 +13,17 @@ int main(void){
 //? Augabe 2
   cout << "Jetzt werden deine Angaben überprüft. Bitte einzeln angeben!\nZuerst deinen Namen bitte:" << endl;
 
-std::string line;
-getline(std::cin, line);  // get the entire line
+
+string line;
+getline(cin, line);  // get the entire line
+
+cout << line << endl;
 
 // parse each string from the line
-std::istringstream stream(line);
+/*std::istringstream stream(line);
 for (int i=0; stream.good(); i++) {
   stream >> input[i];
-}
+}*/
 
 }
 
