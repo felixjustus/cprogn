@@ -30,7 +30,7 @@ private:
 
 public:
     PriorityQueue(): head(nullptr), tail(nullptr) {}
-    ~PriorityQueue();
+    ~PriorityQueue();   //?tilde für konstruktor
     void insert(string value, float priority);
     string extractMin();
     void decreaseKey(string value, float priority);
