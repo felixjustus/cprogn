@@ -16,7 +16,7 @@ int main(void){
 
 
 string line;
-getline(cin, line);  // get the entire line
+getline(cin, line);  // get the entire line LINW
 
 cout << line << endl;
 
