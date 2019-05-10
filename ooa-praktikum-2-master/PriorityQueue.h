@@ -30,7 +30,7 @@ private:
 
 public:
     PriorityQueue(): head(nullptr), tail(nullptr) {}
-    ~PriorityQueue();   //?tilde für konstruktor
+    ~PriorityQueue();
     void insert(string value, float priority);
     string extractMin();
     void decreaseKey(string value, float priority);
@@ -42,3 +42,4 @@ public:
 
 
 #endif //OOA_PRAKTIKUM_2_PRIORITYQUEUE_H
+ 
