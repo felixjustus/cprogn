@@ -1,6 +1,7 @@
 //! <16:18:02>
 #include <iostream>
 #include <string>
+#include <sstream>
 #include <algorithm>
 using namespace std;
 
@@ -13,14 +14,26 @@ int main(void){
 //? Augabe 2
   cout << "Jetzt werden deine Angaben überprüft. Bitte einzeln angeben!\nZuerst deinen Namen bitte:" << endl;
 
-std::string line;
-getline(std::cin, line);  // get the entire line
 
+string line;
+getline(cin, line);  // get the entire line LINW
+
+cout << line << endl;
+
+char * tab2 = new char [line.length()+1];
+strcpy (tab2, line.c_str());
+
+for (int i=0; i<line.length(); i++){
+  cout << line[i] << endl;
+}
+
+/*
 // parse each string from the line
-std::istringstream stream(line);
+stringstream ss;
+
 for (int i=0; stream.good(); i++) {
   stream >> input[i];
 }
-
+*/
 }
 
