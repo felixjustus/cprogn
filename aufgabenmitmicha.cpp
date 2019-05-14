@@ -44,20 +44,33 @@ string pstring = "klappts?";
 char charstring[] = "klappt";
 */
 
-int pint = 5;
-char pchar = 'A';
-string pstring = "klappts?";
-char charstring[] = "klappt";
+  int pint = 5;
+  char pchar = 'A';
+  string pstring = "klappts?";
+  char charstring[] = "klappt";
 
-int *p, *o, *i, *u;
-p = &pint;
-cout << pint << " " << pchar << " " << pstring << charstring << endl;
-cout << &pint << " =&pint" << endl;
-cout << p << " =p";
+  int *p, *o, *i, *u;
+  p = &pint;
+  cout << pint << " " << pchar << " " << pstring << charstring << endl;
+  cout << &pint << " =&pint" << endl;
+  cout << p << " =p\n\n";
 
+  class Anschrift{
+   public:
+   int alter, hausnummer;
+   int telnummer;
+   string name;
+   string mail;
+   char sternzeichen[];
+   string job;
+  };
 
-
-
+  Anschrift Felix;
+  Felix.alter = 24;
+  Felix.hausnummer = 20;
+  cout << "Integer bitte\n";
+  cin >> Felix.alter;       //? von der console in die classe Anschrift rein :D
+  cout << Felix.alter;
 
 }
 
