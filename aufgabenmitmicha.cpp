@@ -44,12 +44,16 @@ string pstring = "klappts?";
 char charstring[] = "klappt";
 */
 
-intpint = 5;
+int pint = 5;
 char pchar = 'A';
 string pstring = "klappts?";
 char charstring[] = "klappt";
 
-cout << pint << " " << pchar << " " << pstring << charstring;
+int *p, *o, *i, *u;
+p = &pint;
+cout << pint << " " << pchar << " " << pstring << charstring << endl;
+cout << &pint << endl;
+cout << p;
 
 
 
