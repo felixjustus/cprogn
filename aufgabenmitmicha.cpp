@@ -52,8 +52,8 @@ char charstring[] = "klappt";
 int *p, *o, *i, *u;
 p = &pint;
 cout << pint << " " << pchar << " " << pstring << charstring << endl;
-cout << &pint << endl;
-cout << p;
+cout << &pint << " =&pint" << endl;
+cout << p << " =p";
 
 
 
