@@ -14,7 +14,7 @@ int main(void){
 //? Augabe 2
   cout << "Jetzt werden deine Angaben überprüft. Bitte einzeln angeben!\nZuerst deinen Namen bitte:" << endl;
 
-
+/*
 string line;
 getline(cin, line);  // get the entire line LINW
 
@@ -27,13 +27,33 @@ for (int i=0; i<line.length(); i++){
   cout << line[i] << endl;
 }
 
-/*
-// parse each string from the line
+********
+// parse each string from the line //! oben hat das letztesn geklappt um das line auszugeben
 stringstream ss;
 
 for (int i=0; stream.good(); i++) {
   stream >> input[i];
 }
 */
+cout << "\n\n--Jetzt wird mit Pointern sachen ausgegeben--\n\n\n";
+
+/*
+int pint = 5;
+char pchar = 'A';
+string pstring = "klappts?";
+char charstring[] = "klappt";
+*/
+
+intpint = 5;
+char pchar = 'A';
+string pstring = "klappts?";
+char charstring[] = "klappt";
+
+cout << pint << " " << pchar << " " << pstring << charstring;
+
+
+
+
+
 }
 
