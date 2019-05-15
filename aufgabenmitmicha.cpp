@@ -3,7 +3,9 @@
 #include <string>
 #include <sstream>
 #include <algorithm>
+//#include "pmmp.h"
 using namespace std;
+
 
 //? Aufgabe 1
 int main(void){
@@ -61,16 +63,31 @@ char charstring[] = "klappt";
    int telnummer;
    string name;
    string mail;
-   char sternzeichen[];
+   //char sternzeichen[];
    string job;
   };
 
   Anschrift Felix;
   Felix.alter = 24;
   Felix.hausnummer = 20;
-  cout << "Integer bitte\n";
-  cin >> Felix.alter;       //? von der console in die classe Anschrift rein :D
-  cout << Felix.alter;
+
+
+  cout << "Name bitte für Eingabe\n";
+  Anschrift eingabe;
+  cin >> eingabe.alter;       //? von der console in die classe Anschrift rein :D
+  cout << "\n\nAlter bitte:" << endl;
+  cin >> eingabe.alter;
+//! terminal schließt nach einmaliger eingabe
+
+
+/*
+  int gemeinsamesAlter(void){
+    return Felix.alter + eingabe.alter;
+  cout << gemeinsamesAlter();
+  }*/
+
+
+
 
 }
 
