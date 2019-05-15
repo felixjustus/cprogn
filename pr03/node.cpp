@@ -2,6 +2,8 @@
 #include <cstdlib>
 #include <ctime>
 #include <utility>
+#include <vector>
+
 using namespace std;
 
 std::string getKey(void){

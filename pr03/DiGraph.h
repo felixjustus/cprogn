@@ -5,6 +5,3 @@
 #include <vector>
 
 using namespace std;
-
-unsigned int sizes(void)
-Liste(const Liste &old)
