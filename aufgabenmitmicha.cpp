@@ -67,18 +67,23 @@ char charstring[] = "klappt";
    string job;
   };
 
+
+
+  int array[] = {1,2,3,4,5,6,7,8};
+
   Anschrift Felix;
   Felix.alter = 24;
   Felix.hausnummer = 20;
 
-
+  for(int i=0; i<sizeof(array); i++){
+    cout << array[i];
+  }
   cout << "Name bitte für Eingabe\n";
   Anschrift eingabe;
   cin >> eingabe.alter;       //? von der console in die classe Anschrift rein :D
   cout << "\n\nAlter bitte:" << endl;
   cin >> eingabe.alter;
 //! terminal schließt nach einmaliger eingabe
-
 
 /*
   int gemeinsamesAlter(void){
